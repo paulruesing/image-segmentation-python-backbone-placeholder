@@ -22,21 +22,20 @@ companion native Rust application that handles real-time inference and inpaintin
 ## Key ingredients
 
 ### Data preparation
-- **Synthetic data augmentation** — training data is generated programmatically from
+- **Synthetic data augmentation** - training data is generated programmatically from
   clean source material, eliminating the need for manual annotation
 
 ### Model training & validation
-- **Deep learning segmentation** — models trained for pixel-wise artefact detection,
-  with separate models per artefact category
-- **Structured model selection** — checkpoints are evaluated systematically; results
+- **Deep learning segmentation** - multiple models trained for pixel-wise artefact detection
+- **Structured model selection** - checkpoints are evaluated systematically; results
   are exported to CSV for comparison and selection
 
 ### Export & deployment
-- **ONNX export** — models are exported to ONNX format for cross-platform consumption
+- **ONNX export** - models are exported to ONNX format for cross-platform consumption
   by the Rust inference backend
-- **CoreML export** — on macOS, models are additionally converted to CoreML
+- **CoreML export** - on macOS, models are additionally converted to CoreML
   `.mlpackage` format for Apple Silicon runtime optimisation
-- **Optional quantisation** — post-training quantisation supported for reduced model
+- **Optional quantisation** - post-training quantisation supported for reduced model
   size and faster inference
 
 ---
