@@ -26,7 +26,7 @@ companion native Rust application that handles real-time inference and inpaintin
   clean source material, eliminating the need for manual annotation
 
 ### Model training & validation
-- **Deep learning segmentation** - multiple models trained for pixel-wise artefact detection
+- **Deep learning segmentation** - multiple models trained for joint pixel-wise artefact detection
 - **Structured model selection** - checkpoints are evaluated systematically; results
   are exported to CSV for comparison and selection
 
